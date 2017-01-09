@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B7425C10BDDD38A1BAE6344 /* libPods-FyresiteCheckin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C77B1A063019B3CFB0C6A /* libPods-FyresiteCheckin.a */; };
+		9D63CF871E23FFB00053228A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF861E23FFB00053228A /* main.m */; };
+		9D63CF8A1E23FFB00053228A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF891E23FFB00053228A /* AppDelegate.m */; };
+		9D63CF931E23FFB00053228A /* FyresiteCheckin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */; };
+		9D63CF951E23FFB00053228A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D63CF941E23FFB00053228A /* Assets.xcassets */; };
+		9D63CF981E23FFB00053228A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */; };
+		9D63CFA31E23FFB00053228A /* FyresiteCheckinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFA21E23FFB00053228A /* FyresiteCheckinTests.m */; };
+		9D63CFAE1E23FFB00053228A /* FyresiteCheckinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFAD1E23FFB00053228A /* FyresiteCheckinUITests.m */; };
+		9D63CFBD1E2400D50053228A /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFBC1E2400D50053228A /* StartController.m */; };
+		9D63CFC01E2404380053228A /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFBF1E2404380053228A /* HTTPHelper.m */; };
+		9D63CFC31E2404760053228A /* JsonReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFC21E2404760053228A /* JsonReturn.m */; };
+		9D63CFC61E24207D0053228A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFC51E24207D0053228A /* LoginController.m */; };
+		9D63CFC91E2420920053228A /* UserNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFC81E2420920053228A /* UserNavigation.m */; };
+		9D63CFCC1E2420B30053228A /* ReportsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFCB1E2420B30053228A /* ReportsController.m */; };
+		9D63CFCF1E24236C0053228A /* CustomViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFCE1E24236C0053228A /* CustomViews.m */; };
+		9D63CFD21E2423B30053228A /* CustomScripts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFD11E2423B30053228A /* CustomScripts.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D63CF9F1E23FFB00053228A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D63CF7A1E23FFB00053228A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D63CF811E23FFB00053228A;
+			remoteInfo = FyresiteCheckin;
+		};
+		9D63CFAA1E23FFB00053228A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D63CF7A1E23FFB00053228A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D63CF811E23FFB00053228A;
+			remoteInfo = FyresiteCheckin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000C77B1A063019B3CFB0C6A /* libPods-FyresiteCheckin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FyresiteCheckin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		358815E20B2283D47CFABFDE /* Pods-FyresiteCheckin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyresiteCheckin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FyresiteCheckin/Pods-FyresiteCheckin.debug.xcconfig"; sourceTree = "<group>"; };
+		54ED2A4D10C4C58F2ECE0982 /* Pods-FyresiteCheckin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FyresiteCheckin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FyresiteCheckin/Pods-FyresiteCheckin.release.xcconfig"; sourceTree = "<group>"; };
+		9D63CF821E23FFB00053228A /* FyresiteCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyresiteCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D63CF861E23FFB00053228A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D63CF881E23FFB00053228A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D63CF891E23FFB00053228A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D63CF921E23FFB00053228A /* FyresiteCheckin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FyresiteCheckin.xcdatamodel; sourceTree = "<group>"; };
+		9D63CF941E23FFB00053228A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D63CF971E23FFB00053228A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D63CF991E23FFB00053228A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D63CF9E1E23FFB00053228A /* FyresiteCheckinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyresiteCheckinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D63CFA21E23FFB00053228A /* FyresiteCheckinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyresiteCheckinTests.m; sourceTree = "<group>"; };
+		9D63CFA41E23FFB00053228A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D63CFA91E23FFB00053228A /* FyresiteCheckinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyresiteCheckinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D63CFAD1E23FFB00053228A /* FyresiteCheckinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyresiteCheckinUITests.m; sourceTree = "<group>"; };
+		9D63CFAF1E23FFB00053228A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D63CFBB1E2400D50053228A /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
+		9D63CFBC1E2400D50053228A /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
+		9D63CFBE1E2404380053228A /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
+		9D63CFBF1E2404380053228A /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
+		9D63CFC11E2404760053228A /* JsonReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonReturn.h; sourceTree = "<group>"; };
+		9D63CFC21E2404760053228A /* JsonReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonReturn.m; sourceTree = "<group>"; };
+		9D63CFC41E24207D0053228A /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		9D63CFC51E24207D0053228A /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		9D63CFC71E2420920053228A /* UserNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNavigation.h; sourceTree = "<group>"; };
+		9D63CFC81E2420920053228A /* UserNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNavigation.m; sourceTree = "<group>"; };
+		9D63CFCA1E2420B30053228A /* ReportsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsController.h; sourceTree = "<group>"; };
+		9D63CFCB1E2420B30053228A /* ReportsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsController.m; sourceTree = "<group>"; };
+		9D63CFCD1E24236C0053228A /* CustomViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViews.h; sourceTree = "<group>"; };
+		9D63CFCE1E24236C0053228A /* CustomViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViews.m; sourceTree = "<group>"; };
+		9D63CFD01E2423B30053228A /* CustomScripts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScripts.h; sourceTree = "<group>"; };
+		9D63CFD11E2423B30053228A /* CustomScripts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScripts.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D63CF7F1E23FFB00053228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7425C10BDDD38A1BAE6344 /* libPods-FyresiteCheckin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CF9B1E23FFB00053228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CFA61E23FFB00053228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2BEB2E25428C1E307FB757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000C77B1A063019B3CFB0C6A /* libPods-FyresiteCheckin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2773139F0CF6E8E613E6A992 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				358815E20B2283D47CFABFDE /* Pods-FyresiteCheckin.debug.xcconfig */,
+				54ED2A4D10C4C58F2ECE0982 /* Pods-FyresiteCheckin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D63CF791E23FFAF0053228A = {
+			isa = PBXGroup;
+			children = (
+				9D63CF841E23FFB00053228A /* FyresiteCheckin */,
+				9D63CFA11E23FFB00053228A /* FyresiteCheckinTests */,
+				9D63CFAC1E23FFB00053228A /* FyresiteCheckinUITests */,
+				9D63CF831E23FFB00053228A /* Products */,
+				2773139F0CF6E8E613E6A992 /* Pods */,
+				0A2BEB2E25428C1E307FB757 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D63CF831E23FFB00053228A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CF821E23FFB00053228A /* FyresiteCheckin.app */,
+				9D63CF9E1E23FFB00053228A /* FyresiteCheckinTests.xctest */,
+				9D63CFA91E23FFB00053228A /* FyresiteCheckinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D63CF841E23FFB00053228A /* FyresiteCheckin */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CF881E23FFB00053228A /* AppDelegate.h */,
+				9D63CF891E23FFB00053228A /* AppDelegate.m */,
+				9D63CF941E23FFB00053228A /* Assets.xcassets */,
+				9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */,
+				9D63CF991E23FFB00053228A /* Info.plist */,
+				9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */,
+				9D63CF851E23FFB00053228A /* Supporting Files */,
+				9D63CFBB1E2400D50053228A /* StartController.h */,
+				9D63CFBC1E2400D50053228A /* StartController.m */,
+				9D63CFBE1E2404380053228A /* HTTPHelper.h */,
+				9D63CFBF1E2404380053228A /* HTTPHelper.m */,
+				9D63CFC11E2404760053228A /* JsonReturn.h */,
+				9D63CFC21E2404760053228A /* JsonReturn.m */,
+				9D63CFC41E24207D0053228A /* LoginController.h */,
+				9D63CFC51E24207D0053228A /* LoginController.m */,
+				9D63CFC71E2420920053228A /* UserNavigation.h */,
+				9D63CFC81E2420920053228A /* UserNavigation.m */,
+				9D63CFCA1E2420B30053228A /* ReportsController.h */,
+				9D63CFCB1E2420B30053228A /* ReportsController.m */,
+				9D63CFCD1E24236C0053228A /* CustomViews.h */,
+				9D63CFCE1E24236C0053228A /* CustomViews.m */,
+				9D63CFD01E2423B30053228A /* CustomScripts.h */,
+				9D63CFD11E2423B30053228A /* CustomScripts.m */,
+			);
+			path = FyresiteCheckin;
+			sourceTree = "<group>";
+		};
+		9D63CF851E23FFB00053228A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CF861E23FFB00053228A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D63CFA11E23FFB00053228A /* FyresiteCheckinTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CFA21E23FFB00053228A /* FyresiteCheckinTests.m */,
+				9D63CFA41E23FFB00053228A /* Info.plist */,
+			);
+			path = FyresiteCheckinTests;
+			sourceTree = "<group>";
+		};
+		9D63CFAC1E23FFB00053228A /* FyresiteCheckinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CFAD1E23FFB00053228A /* FyresiteCheckinUITests.m */,
+				9D63CFAF1E23FFB00053228A /* Info.plist */,
+			);
+			path = FyresiteCheckinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D63CF811E23FFB00053228A /* FyresiteCheckin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D63CFB21E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckin" */;
+			buildPhases = (
+				9BD7FF27F2A92F44DEC0B0F6 /* [CP] Check Pods Manifest.lock */,
+				9D63CF7E1E23FFB00053228A /* Sources */,
+				9D63CF7F1E23FFB00053228A /* Frameworks */,
+				9D63CF801E23FFB00053228A /* Resources */,
+				A5458F004145B5491B93217A /* [CP] Embed Pods Frameworks */,
+				71E22B2418DD885EFDAAF1A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyresiteCheckin;
+			productName = FyresiteCheckin;
+			productReference = 9D63CF821E23FFB00053228A /* FyresiteCheckin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D63CF9D1E23FFB00053228A /* FyresiteCheckinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D63CFB51E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckinTests" */;
+			buildPhases = (
+				9D63CF9A1E23FFB00053228A /* Sources */,
+				9D63CF9B1E23FFB00053228A /* Frameworks */,
+				9D63CF9C1E23FFB00053228A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D63CFA01E23FFB00053228A /* PBXTargetDependency */,
+			);
+			name = FyresiteCheckinTests;
+			productName = FyresiteCheckinTests;
+			productReference = 9D63CF9E1E23FFB00053228A /* FyresiteCheckinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D63CFA81E23FFB00053228A /* FyresiteCheckinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D63CFB81E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckinUITests" */;
+			buildPhases = (
+				9D63CFA51E23FFB00053228A /* Sources */,
+				9D63CFA61E23FFB00053228A /* Frameworks */,
+				9D63CFA71E23FFB00053228A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D63CFAB1E23FFB00053228A /* PBXTargetDependency */,
+			);
+			name = FyresiteCheckinUITests;
+			productName = FyresiteCheckinUITests;
+			productReference = 9D63CFA91E23FFB00053228A /* FyresiteCheckinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D63CF7A1E23FFB00053228A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Fyresite;
+				TargetAttributes = {
+					9D63CF811E23FFB00053228A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NS7A5P4MW3;
+						ProvisioningStyle = Automatic;
+					};
+					9D63CF9D1E23FFB00053228A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D63CF811E23FFB00053228A;
+					};
+					9D63CFA81E23FFB00053228A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D63CF811E23FFB00053228A;
+					};
+				};
+			};
+			buildConfigurationList = 9D63CF7D1E23FFB00053228A /* Build configuration list for PBXProject "FyresiteCheckin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D63CF791E23FFAF0053228A;
+			productRefGroup = 9D63CF831E23FFB00053228A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D63CF811E23FFB00053228A /* FyresiteCheckin */,
+				9D63CF9D1E23FFB00053228A /* FyresiteCheckinTests */,
+				9D63CFA81E23FFB00053228A /* FyresiteCheckinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D63CF801E23FFB00053228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63CF981E23FFB00053228A /* LaunchScreen.storyboard in Resources */,
+				9D63CF951E23FFB00053228A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CF9C1E23FFB00053228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CFA71E23FFB00053228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71E22B2418DD885EFDAAF1A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FyresiteCheckin/Pods-FyresiteCheckin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD7FF27F2A92F44DEC0B0F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5458F004145B5491B93217A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FyresiteCheckin/Pods-FyresiteCheckin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D63CF7E1E23FFB00053228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63CFC61E24207D0053228A /* LoginController.m in Sources */,
+				9D63CF931E23FFB00053228A /* FyresiteCheckin.xcdatamodeld in Sources */,
+				9D63CFCC1E2420B30053228A /* ReportsController.m in Sources */,
+				9D63CFC91E2420920053228A /* UserNavigation.m in Sources */,
+				9D63CFBD1E2400D50053228A /* StartController.m in Sources */,
+				9D63CFC31E2404760053228A /* JsonReturn.m in Sources */,
+				9D63CFC01E2404380053228A /* HTTPHelper.m in Sources */,
+				9D63CF8A1E23FFB00053228A /* AppDelegate.m in Sources */,
+				9D63CFD21E2423B30053228A /* CustomScripts.m in Sources */,
+				9D63CF871E23FFB00053228A /* main.m in Sources */,
+				9D63CFCF1E24236C0053228A /* CustomViews.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CF9A1E23FFB00053228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63CFA31E23FFB00053228A /* FyresiteCheckinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63CFA51E23FFB00053228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D63CFAE1E23FFB00053228A /* FyresiteCheckinUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D63CFA01E23FFB00053228A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D63CF811E23FFB00053228A /* FyresiteCheckin */;
+			targetProxy = 9D63CF9F1E23FFB00053228A /* PBXContainerItemProxy */;
+		};
+		9D63CFAB1E23FFB00053228A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D63CF811E23FFB00053228A /* FyresiteCheckin */;
+			targetProxy = 9D63CFAA1E23FFB00053228A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D63CF971E23FFB00053228A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D63CFB01E23FFB00053228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D63CFB11E23FFB00053228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D63CFB31E23FFB00053228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358815E20B2283D47CFABFDE /* Pods-FyresiteCheckin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NS7A5P4MW3;
+				INFOPLIST_FILE = FyresiteCheckin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D63CFB41E23FFB00053228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ED2A4D10C4C58F2ECE0982 /* Pods-FyresiteCheckin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NS7A5P4MW3;
+				INFOPLIST_FILE = FyresiteCheckin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9D63CFB61E23FFB00053228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FyresiteCheckinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyresiteCheckin.app/FyresiteCheckin";
+			};
+			name = Debug;
+		};
+		9D63CFB71E23FFB00053228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FyresiteCheckinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FyresiteCheckin.app/FyresiteCheckin";
+			};
+			name = Release;
+		};
+		9D63CFB91E23FFB00053228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FyresiteCheckinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FyresiteCheckin;
+			};
+			name = Debug;
+		};
+		9D63CFBA1E23FFB00053228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FyresiteCheckinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fyresite.FyresiteCheckinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FyresiteCheckin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D63CF7D1E23FFB00053228A /* Build configuration list for PBXProject "FyresiteCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D63CFB01E23FFB00053228A /* Debug */,
+				9D63CFB11E23FFB00053228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D63CFB21E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D63CFB31E23FFB00053228A /* Debug */,
+				9D63CFB41E23FFB00053228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D63CFB51E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D63CFB61E23FFB00053228A /* Debug */,
+				9D63CFB71E23FFB00053228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D63CFB81E23FFB00053228A /* Build configuration list for PBXNativeTarget "FyresiteCheckinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D63CFB91E23FFB00053228A /* Debug */,
+				9D63CFBA1E23FFB00053228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D63CF921E23FFB00053228A /* FyresiteCheckin.xcdatamodel */,
+			);
+			currentVersion = 9D63CF921E23FFB00053228A /* FyresiteCheckin.xcdatamodel */;
+			path = FyresiteCheckin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9D63CF7A1E23FFB00053228A /* Project object */;
+}
