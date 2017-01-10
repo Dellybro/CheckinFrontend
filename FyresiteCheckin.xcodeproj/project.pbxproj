@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		4B7425C10BDDD38A1BAE6344 /* libPods-FyresiteCheckin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C77B1A063019B3CFB0C6A /* libPods-FyresiteCheckin.a */; };
 		9D63CF871E23FFB00053228A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF861E23FFB00053228A /* main.m */; };
-		9D63CF8A1E23FFB00053228A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF891E23FFB00053228A /* AppDelegate.m */; };
 		9D63CF931E23FFB00053228A /* FyresiteCheckin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */; };
 		9D63CF951E23FFB00053228A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D63CF941E23FFB00053228A /* Assets.xcassets */; };
 		9D63CF981E23FFB00053228A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */; };
 		9D63CFA31E23FFB00053228A /* FyresiteCheckinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFA21E23FFB00053228A /* FyresiteCheckinTests.m */; };
 		9D63CFAE1E23FFB00053228A /* FyresiteCheckinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFAD1E23FFB00053228A /* FyresiteCheckinUITests.m */; };
-		9D63CFBD1E2400D50053228A /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFBC1E2400D50053228A /* StartController.m */; };
+		9D63CFBD1E2400D50053228A /* ClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFBC1E2400D50053228A /* ClockController.m */; };
 		9D63CFC01E2404380053228A /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFBF1E2404380053228A /* HTTPHelper.m */; };
 		9D63CFC31E2404760053228A /* JsonReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFC21E2404760053228A /* JsonReturn.m */; };
 		9D63CFC61E24207D0053228A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFC51E24207D0053228A /* LoginController.m */; };
@@ -23,6 +22,15 @@
 		9D63CFCC1E2420B30053228A /* ReportsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFCB1E2420B30053228A /* ReportsController.m */; };
 		9D63CFCF1E24236C0053228A /* CustomViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFCE1E24236C0053228A /* CustomViews.m */; };
 		9D63CFD21E2423B30053228A /* CustomScripts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CFD11E2423B30053228A /* CustomScripts.m */; };
+		9DFF30E11E244DFA00023A33 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF30E01E244DFA00023A33 /* BaseController.m */; };
+		9DFF30E81E2452CF00023A33 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30E61E2452BC00023A33 /* Roboto-Medium.ttf */; };
+		9DFF30E91E2452D100023A33 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30E51E2452BC00023A33 /* Roboto-LightItalic.ttf */; };
+		9DFF30EA1E2452D400023A33 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30E21E2452BC00023A33 /* Roboto-Bold.ttf */; };
+		9DFF30EB1E2452D400023A33 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30E31E2452BC00023A33 /* Roboto-Italic.ttf */; };
+		9DFF30EC1E2452D400023A33 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30E41E2452BC00023A33 /* Roboto-Light.ttf */; };
+		9DFF30EF1E2455D000023A33 /* OptionDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF30EE1E2455D000023A33 /* OptionDropDown.m */; };
+		9DFF30FB1E2461F400023A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF891E23FFB00053228A /* AppDelegate.m */; };
+		9DFF30FC1E24621B00023A33 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D63CF991E23FFB00053228A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +68,8 @@
 		9D63CFA91E23FFB00053228A /* FyresiteCheckinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyresiteCheckinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D63CFAD1E23FFB00053228A /* FyresiteCheckinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FyresiteCheckinUITests.m; sourceTree = "<group>"; };
 		9D63CFAF1E23FFB00053228A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D63CFBB1E2400D50053228A /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
-		9D63CFBC1E2400D50053228A /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
+		9D63CFBB1E2400D50053228A /* ClockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockController.h; sourceTree = "<group>"; };
+		9D63CFBC1E2400D50053228A /* ClockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockController.m; sourceTree = "<group>"; };
 		9D63CFBE1E2404380053228A /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
 		9D63CFBF1E2404380053228A /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
 		9D63CFC11E2404760053228A /* JsonReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonReturn.h; sourceTree = "<group>"; };
@@ -76,6 +84,15 @@
 		9D63CFCE1E24236C0053228A /* CustomViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViews.m; sourceTree = "<group>"; };
 		9D63CFD01E2423B30053228A /* CustomScripts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScripts.h; sourceTree = "<group>"; };
 		9D63CFD11E2423B30053228A /* CustomScripts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScripts.m; sourceTree = "<group>"; };
+		9DFF30DF1E244DFA00023A33 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		9DFF30E01E244DFA00023A33 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		9DFF30E21E2452BC00023A33 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		9DFF30E31E2452BC00023A33 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		9DFF30E41E2452BC00023A33 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		9DFF30E51E2452BC00023A33 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		9DFF30E61E2452BC00023A33 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		9DFF30ED1E2455D000023A33 /* OptionDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionDropDown.h; sourceTree = "<group>"; };
+		9DFF30EE1E2455D000023A33 /* OptionDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionDropDown.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,29 +163,14 @@
 		9D63CF841E23FFB00053228A /* FyresiteCheckin */ = {
 			isa = PBXGroup;
 			children = (
-				9D63CF881E23FFB00053228A /* AppDelegate.h */,
-				9D63CF891E23FFB00053228A /* AppDelegate.m */,
-				9D63CF941E23FFB00053228A /* Assets.xcassets */,
-				9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */,
-				9D63CF991E23FFB00053228A /* Info.plist */,
-				9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */,
+				9DFF30DB1E244DA400023A33 /* LoggedIN */,
+				9DFF30DA1E244D9900023A33 /* Models */,
+				9DFF30D91E244D8800023A33 /* Custom */,
 				9D63CF851E23FFB00053228A /* Supporting Files */,
-				9D63CFBB1E2400D50053228A /* StartController.h */,
-				9D63CFBC1E2400D50053228A /* StartController.m */,
-				9D63CFBE1E2404380053228A /* HTTPHelper.h */,
-				9D63CFBF1E2404380053228A /* HTTPHelper.m */,
-				9D63CFC11E2404760053228A /* JsonReturn.h */,
-				9D63CFC21E2404760053228A /* JsonReturn.m */,
+				9DFF30DC1E244DB500023A33 /* MainStuff */,
 				9D63CFC41E24207D0053228A /* LoginController.h */,
 				9D63CFC51E24207D0053228A /* LoginController.m */,
-				9D63CFC71E2420920053228A /* UserNavigation.h */,
-				9D63CFC81E2420920053228A /* UserNavigation.m */,
-				9D63CFCA1E2420B30053228A /* ReportsController.h */,
-				9D63CFCB1E2420B30053228A /* ReportsController.m */,
-				9D63CFCD1E24236C0053228A /* CustomViews.h */,
-				9D63CFCE1E24236C0053228A /* CustomViews.m */,
-				9D63CFD01E2423B30053228A /* CustomScripts.h */,
-				9D63CFD11E2423B30053228A /* CustomScripts.m */,
+				9D63CF941E23FFB00053228A /* Assets.xcassets */,
 			);
 			path = FyresiteCheckin;
 			sourceTree = "<group>";
@@ -197,6 +199,86 @@
 				9D63CFAF1E23FFB00053228A /* Info.plist */,
 			);
 			path = FyresiteCheckinUITests;
+			sourceTree = "<group>";
+		};
+		9DFF30D91E244D8800023A33 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CFCD1E24236C0053228A /* CustomViews.h */,
+				9D63CFCE1E24236C0053228A /* CustomViews.m */,
+				9D63CFD01E2423B30053228A /* CustomScripts.h */,
+				9D63CFD11E2423B30053228A /* CustomScripts.m */,
+				9D63CFBE1E2404380053228A /* HTTPHelper.h */,
+				9D63CFBF1E2404380053228A /* HTTPHelper.m */,
+				9DFF30ED1E2455D000023A33 /* OptionDropDown.h */,
+				9DFF30EE1E2455D000023A33 /* OptionDropDown.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		9DFF30DA1E244D9900023A33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CFC11E2404760053228A /* JsonReturn.h */,
+				9D63CFC21E2404760053228A /* JsonReturn.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9DFF30DB1E244DA400023A33 /* LoggedIN */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF30DD1E244DD900023A33 /* Navigation */,
+			);
+			name = LoggedIN;
+			sourceTree = "<group>";
+		};
+		9DFF30DC1E244DB500023A33 /* MainStuff */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF30E71E2452C200023A33 /* Fonts */,
+				9D63CF881E23FFB00053228A /* AppDelegate.h */,
+				9D63CF891E23FFB00053228A /* AppDelegate.m */,
+				9D63CF961E23FFB00053228A /* LaunchScreen.storyboard */,
+				9D63CF991E23FFB00053228A /* Info.plist */,
+				9D63CF911E23FFB00053228A /* FyresiteCheckin.xcdatamodeld */,
+			);
+			name = MainStuff;
+			sourceTree = "<group>";
+		};
+		9DFF30DD1E244DD900023A33 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF30DE1E244DE400023A33 /* Controllers */,
+				9D63CFC71E2420920053228A /* UserNavigation.h */,
+				9D63CFC81E2420920053228A /* UserNavigation.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		9DFF30DE1E244DE400023A33 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D63CFCA1E2420B30053228A /* ReportsController.h */,
+				9D63CFCB1E2420B30053228A /* ReportsController.m */,
+				9D63CFBB1E2400D50053228A /* ClockController.h */,
+				9D63CFBC1E2400D50053228A /* ClockController.m */,
+				9DFF30DF1E244DFA00023A33 /* BaseController.h */,
+				9DFF30E01E244DFA00023A33 /* BaseController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9DFF30E71E2452C200023A33 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF30E21E2452BC00023A33 /* Roboto-Bold.ttf */,
+				9DFF30E31E2452BC00023A33 /* Roboto-Italic.ttf */,
+				9DFF30E41E2452BC00023A33 /* Roboto-Light.ttf */,
+				9DFF30E51E2452BC00023A33 /* Roboto-LightItalic.ttf */,
+				9DFF30E61E2452BC00023A33 /* Roboto-Medium.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +391,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFF30FC1E24621B00023A33 /* Info.plist in Resources */,
 				9D63CF981E23FFB00053228A /* LaunchScreen.storyboard in Resources */,
+				9DFF30EB1E2452D400023A33 /* Roboto-Italic.ttf in Resources */,
 				9D63CF951E23FFB00053228A /* Assets.xcassets in Resources */,
+				9DFF30EA1E2452D400023A33 /* Roboto-Bold.ttf in Resources */,
+				9DFF30EC1E2452D400023A33 /* Roboto-Light.ttf in Resources */,
+				9DFF30E91E2452D100023A33 /* Roboto-LightItalic.ttf in Resources */,
+				9DFF30E81E2452CF00023A33 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +473,16 @@
 			files = (
 				9D63CFC61E24207D0053228A /* LoginController.m in Sources */,
 				9D63CF931E23FFB00053228A /* FyresiteCheckin.xcdatamodeld in Sources */,
+				9DFF30EF1E2455D000023A33 /* OptionDropDown.m in Sources */,
 				9D63CFCC1E2420B30053228A /* ReportsController.m in Sources */,
 				9D63CFC91E2420920053228A /* UserNavigation.m in Sources */,
-				9D63CFBD1E2400D50053228A /* StartController.m in Sources */,
+				9D63CFBD1E2400D50053228A /* ClockController.m in Sources */,
 				9D63CFC31E2404760053228A /* JsonReturn.m in Sources */,
+				9DFF30FB1E2461F400023A33 /* AppDelegate.m in Sources */,
 				9D63CFC01E2404380053228A /* HTTPHelper.m in Sources */,
-				9D63CF8A1E23FFB00053228A /* AppDelegate.m in Sources */,
 				9D63CFD21E2423B30053228A /* CustomScripts.m in Sources */,
 				9D63CF871E23FFB00053228A /* main.m in Sources */,
+				9DFF30E11E244DFA00023A33 /* BaseController.m in Sources */,
 				9D63CFCF1E24236C0053228A /* CustomViews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

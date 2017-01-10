@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StartController.h"
+#import "ClockController.h"
 #import "ReportsController.h"
 
-@interface UserNavigation : UIPageViewController
+@interface UserNavigation : UIPageViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 
-@property StartController *startController;
+@property ClockController *clockController;
 @property ReportsController *reportsController;
 
 @end

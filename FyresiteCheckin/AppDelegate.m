@@ -16,9 +16,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+    
     // Override point for customization after application launch.
-    _rootView = [[StartController alloc] init];
+    _rootView = [[UserNavigation alloc] init];
     _navigationController = [[UINavigationController alloc] initWithRootViewController:_rootView];
+    
+    self.navigationController.navigationItem.title = @"Fyresite Checkin";
+    self.navigationController.navigationBar.barTintColor = FyresiteBlue;
+    self.navigationController.navigationBar.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0.0f, 2.0f);
+    self.navigationController.navigationBar.layer.shadowRadius = 4.0f;
+    self.navigationController.navigationBar.layer.shadowOpacity = 0.5f;
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [_navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];

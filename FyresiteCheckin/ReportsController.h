@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseController.h"
 
-@interface ReportsController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ReportsController : BaseController <UITableViewDelegate, UITableViewDataSource>
 
 @property UITableView *tableView;
 

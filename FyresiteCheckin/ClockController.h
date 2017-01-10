@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseController.h"
 
-@interface StartController : UIViewController
+@interface ClockController : BaseController
 
 @property UIView *topBar;
 @property UILabel *checkedIn;
 @property UILabel *currentHoursToday;
+
 
 @end

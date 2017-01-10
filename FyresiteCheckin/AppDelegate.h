@@ -11,7 +11,7 @@
 #import "HTTPHelper.h"
 #import "CustomViews.h"
 #import "CustomScripts.h"
-#import "StartController.h"
+#import "UserNavigation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -21,7 +21,7 @@
 
 - (void)saveContext;
 
-@property StartController *rootView;
+@property UserNavigation *rootView;
 @property UINavigationController *navigationController;
 
 @end
